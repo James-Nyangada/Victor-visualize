@@ -1,0 +1,29 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@theme {
+  --color-obsidian: #0D0D12;
+  --color-sunset-start: #FDB813;
+  --color-sunset-end: #F05A28;
+  --color-slate: #A1A1AA;
+  
+  --font-sans: var(--font-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-serif: var(--font-serif), ui-serif, Georgia, serif;
+  --font-mono: var(--font-mono), ui-monospace, SFMono-Regular, monospace;
+}
+
+body {
+  background-color: var(--color-obsidian);
+  color: var(--color-slate);
+}
+
+.text-gradient {
+  background: linear-gradient(to right, var(--color-sunset-start), var(--color-sunset-end));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.bg-gradient-sunset {
+  background: linear-gradient(to right, var(--color-sunset-start), var(--color-sunset-end));
+}
